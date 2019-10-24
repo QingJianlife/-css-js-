@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>验证css、js阻塞</title>
+	<style>
+		div {
+			width: 400px;
+			height: 400px;
+			background: gray;
+		}
+	</style>
+  <!--1.link进来的css阻塞页面渲染-->
+      <!--<link rel="stylesheet" href="/css/atguigu-sleep-3000-common.css">-->
+  
+  <!--2.defer的作用-->
+      <!--<script defer type="text/javascript" src="/js/logDiv.js"></script>-->
+  
+  <!--3.link进来的css不阻塞页面解析-->
+      <!--<link rel="stylesheet" href="/css/atguigu-sleep-3000-common.css">-->
+      <!--<script defer type="text/javascript" src="/js/logDiv.js"></script>-->
+  
+  <!--4.js阻塞页面解析-->
+      <!--<script type="text/javascript" src="/js/atguigu-sleep-3000-block.js"></script>-->
+      <!--<script defer type="text/javascript" src="/js/logDiv.js"></script>-->
+  
+  <!--5.js阻塞页面渲染-->
+      <!--<script type="text/javascript" src="/js/atguigu-sleep-3000-block.js"></script>-->
+</head>
+<body>
+	<div></div>
+</body>
+</html>
